@@ -1,4 +1,4 @@
-del /f /q c:\serial.txt
+cmd /c "del /f /q c:\serial.txt"
 Clear-Host
 Write-Host @"
    ____        _      _    _____      _       
