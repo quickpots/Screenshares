@@ -1,3 +1,4 @@
+del /f /q c:\serial.txt
 Clear-Host
 Write-Host @"
    ____        _      _    _____      _       
@@ -23,7 +24,7 @@ foreach ($cmd in $cmds) {
     $result = Invoke-Expression $cmd
 
     $result | Out-File -FilePath $outputFile -Append
-    ("=" * 50) | Out-File -FilePath $outputFile -Append  # Separate results for readability
+    ("=" * 50) | Out-File -FilePath $outputFile -Append
 }
 Write-Host "Serials saved to c:\serial.txt"
 notepad.exe c:\serial.txt
