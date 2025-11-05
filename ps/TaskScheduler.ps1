@@ -2,7 +2,7 @@
 $UserCurrent = $Env:Username
 Start-Sleep -Seconds 1
 Write-Host "Optimized just a wee bit more by QuickPots (Silly Yapper & Chronic SSer)" -ForegroundColor Red
-Write-Host "Code includes pieces from Lilith and Nolw with improved suspicious files and additional columms." -ForegroundColor Red 
+Write-Host "Code includes pieces from Lilith (added signatures) and Nolw (made most of the script) with improved suspicious files and additional columms." -ForegroundColor Red 
 Write-Host "Analyzing scheduled tasks..." -ForegroundColor Red
 Start-Sleep -Seconds 1
 
