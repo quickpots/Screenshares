@@ -58,5 +58,5 @@ if ($tasks) {
     Write-Host "No tasks found (Ensure Schedule service is running)"
 }
 
-Write-Host "PRESS ENTER TO QUIT" -ForegroundColor White
+Write-Host "PRESS ENTER TO QUIT" 
 Read-Host
