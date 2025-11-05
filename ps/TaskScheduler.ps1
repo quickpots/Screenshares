@@ -1,7 +1,7 @@
 # somehow I managed to fork a fork. I wonder what kind of idiot thinks of this other than myself...……..
 $UserCurrent = $Env:Username
 Start-Sleep -Seconds 1
-Write-Host "Optimized by QuickPots (Random guy I dunno)" -ForegroundColor Red
+Write-Host "Optimized just a wee bit more by QuickPots (Silly Yapper & Chronic SSer)" -ForegroundColor Red
 Write-Host "Code includes pieces from Lilith and Nolw with improved suspicious files and additional columms." -ForegroundColor Red 
 Write-Host "Analyzing scheduled tasks..." -ForegroundColor Red
 Start-Sleep -Seconds 1
