@@ -13,14 +13,13 @@ Write-Host @"
 
 $outputFile = 'c:\serial.txt'
 $cmds = @(
-    'wmic os get serialnumber'
-	'wmic cpu get processorid'
-	'wmic os get installdate'
-	'wmic memorychip get serialnumber'
+    'Get-WmiObject win32_processor | Select-Object ProcessorId'
+    'Get-WmiObject Win32_PhysicalMemory | Select-Object SerialNumber',
+    'Get-WmiObject Win32_DiskDrive | Select-Object SerialNumber'
 )
 	
 foreach ($cmd in $cmds) {
-	"command used: $cmd" | Out-File -FilePath $outputFile -Append
+	"results for: $cmd" | Out-File -FilePath $outputFile -Append
     $result = Invoke-Expression $cmd
 
     $result | Out-File -FilePath $outputFile -Append
